@@ -7,6 +7,12 @@ This repository is used for developing Antora extensions and testing them out.
 . Ensure you have link:https://www.docker.com/get-docker[Docker] installed locally.
 . Clone this repository.
 
+== Developing and locally registering your Antora extensions
+
+. Develop your Antora extensions within the `lib` directory.
+
+. Before testing them out, ensure you've registered your Antora extensions in the `asciidoc:` > `extensions:` section of the `site-local.yml` file.
+
 == Testing out your Antora extensions
 
 This tool set uses Docker Compose to spin up the following services:
