@@ -1,0 +1,15 @@
+site:
+  title: Antora Extensions and Testing
+  url: http://localhost:10000/
+  start_page: antora-extensions-and-testing::index
+content:
+  sources:
+  - url: ./
+    branches: [master]
+asciidoc:
+  extensions:
+  - ./lib/remote-include-processor
+  - ./lib/show-partial-uri-or-path
+ui:
+  bundle:
+    url: https://gitlab.com/g.grossetie/antora-ui-default/-/jobs/artifacts/lunr-integration/raw/build/ui-bundle.zip?job=bundle-dev

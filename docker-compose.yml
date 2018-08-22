@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  antora:
+    image: gilesgas/antora-with-inotify-tools-and-lunr-integration
+    entrypoint: ash
+    command: './live-regenerate.sh'
+    volumes:
+      - '.:/antora'
+
+  web:
+    image: httpd:alpine
+    ports:
+      - 10000:80
+    volumes:
+      - './build/site:/usr/local/apache2/htdocs'

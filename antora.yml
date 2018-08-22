@@ -1,0 +1,6 @@
+name: antora-extensions-and-testing
+title: Antora Extensions and Testing
+version: latest
+start_page: ROOT:index.adoc
+nav:
+- modules/ROOT/nav.adoc
